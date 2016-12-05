@@ -1,0 +1,26 @@
+// Replacing IIFE with Blocks
+
+/*
+A common use of Immediately Invoked Function Expressions is to enclose values within its scope. 
+In ES6, we now have the ability to create block-based scopes and therefore are not limited purely to function-based scope.
+
+*/
+
+//SNIPPET START
+
+(function(){
+	var food='Meow mix';
+}());
+
+console.log(food); //Refernce error;
+
+
+//SNIPPET START
+
+//Using ES6 Blocks
+
+{
+  let food = 'Meow mix';
+}
+
+console.log(food); //Refernce Error

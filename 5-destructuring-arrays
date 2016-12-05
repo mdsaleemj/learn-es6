@@ -1,0 +1,31 @@
+//Destructuring
+
+/*
+ Destructuring allows us to extract  values  from objects and array(even deeply nested ) and store them in 
+ variables with  a more convenient syntax
+*/
+
+'use strict'
+
+//SNIPPET START
+
+//ES5
+
+// var arr = [1, 2, 3, 4];
+
+// var a = arr[0];
+// var b = arr[1];
+// var c = arr[3];
+// var d = arr[4];
+
+
+//SNIPPET START
+//ES6 - Destructing Arrays
+
+let [a,b,c,d] = [1,2,3,4];
+
+console.log("a,b,c,d=",a,b,c,d);
+
+let [x,,z] = [1,2,3];
+
+console.log("x,z =",x,z);
